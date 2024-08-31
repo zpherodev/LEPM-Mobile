@@ -5,10 +5,10 @@ This repository contains the data and trained model files for predicting earthqu
 
 ## Files
 
-1. **merged_earthquake_m9_data.csv**: The merged dataset containing earthquake data for magnitudes 9.0 and above from 1924 to 2024, combined with corresponding magnetic field parameters.
+1. **merged_earthquake_m9_data.csv**: The merged dataset containing earthquake data for magnitudes 9.0 and above from 1924 to 2024, as well as other data for 6 and above, and 7 and above, all combined with corresponding magnetic field parameters.
    - **Columns**: `earthquake_date`, `latitude`, `longitude`, `decg`, `dbhg`, `decr`, `dbhr`, `mfig`, `mfir`, `mdig`, `mdir`, `magnitude`, `decr_above_new`, `mdig_above_new`
 
-2. **random_forest_model_m9.pkl**: The trained Random Forest model for predicting earthquakes of magnitude 9.0 and above.
+2. **random_forest_model_m9.pkl**: The trained Random Forest model for predicting earthquakes of magnitude 6.0 and above.
    - This model was trained using a Random Forest classifier with 100 trees and a random state of 42 for reproducibility.
 
 3. **scaler_m9.pkl**: The scaler used for feature standardization.
