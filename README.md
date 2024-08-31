@@ -36,5 +36,11 @@ This repository contains the data and trained model files for predicting earthqu
 
 ## Contact
 
-For further information or collaboration, please reach out to the developer team or contact OpenAI support.
+For further information or collaboration, please reach out to crk.nft.art@gmail.com
+
+## Acknowledgements
+
+Developed utilizing the amazing skills of ChatGPT 4o made by OpenAI, a thrilling process that deserves much praise to the advancements of the AI model, and a tip of the hat to OpenAI developers and co.
+
+Special Thanks to NOAA, the USGS, the BGS for the use and availability of important data.
 
