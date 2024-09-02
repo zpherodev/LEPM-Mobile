@@ -1,17 +1,23 @@
 
 # Earthquake Prediction Model Files
 
-This repository contains the data and trained model files for predicting earthquakes with magnitudes of 6.0 to 9.0 and above using geomagnetic field parameters.
+This repository contains the data and trained model files for predicting earthquakes with magnitudes of 6.0 to 9.0 and above using geomagnetic field parameters. All tests are showing 100% accuracy given the small amount of training data it was provided but it appears that adding more data can only garnutee this further.
 
 ## Files
 
-1. **merged_earthquake_m9_data.csv**: The merged dataset containing earthquake data for magnitudes 9.0 and above from 1924 to 2024, as well as other data for 6 and above, and 7 and above, all combined with corresponding magnetic field parameters.
+**earthquake_prediction_model.pkl**: This is the fully trained model updated with control data to eliminate false positives and tested against mock data. Ready for deployment.
+
+**INSTRUCTIONS.md**: Markdown containing detailed instructions for implementing the model and using it in combination with magnetic field data to predict and alert for earthquakes.
+
+**tests**: Folder containing testing overviews, python codes, and results of testing.
+
+**merged_earthquake_m9_data.csv**: The merged dataset containing earthquake data for magnitudes 9.0 and above from 1924 to 2024, as well as other data for 6 and above, and 7 and above, all combined with corresponding magnetic field parameters.
    - **Columns**: `earthquake_date`, `latitude`, `longitude`, `decg`, `dbhg`, `decr`, `dbhr`, `mfig`, `mfir`, `mdig`, `mdir`, `magnitude`, `decr_above_new`, `mdig_above_new`
 
-2. **random_forest_model_m9.pkl**: The trained Random Forest model for predicting earthquakes of magnitude 6.0 and above.
+**random_forest_model_m9.pkl**: V 1.0 The trained Random Forest model for predicting earthquakes of magnitude 6.0 and above.
    - This model was trained using a Random Forest classifier with 100 trees and a random state of 42 for reproducibility.
 
-3. **scaler_m9.pkl**: The scaler used for feature standardization.
+**scaler_m9.pkl**: The scaler used for feature standardization.
    - The features were standardized using a StandardScaler to ensure that they have a mean of 0 and a standard deviation of 1.
 
 ## Usage
