@@ -9,7 +9,7 @@ import datetime
 app = Flask(__name__)
 
 # Load pre-trained forest model
-model = joblib.load('magnetic_forest_model.pkl')  # Must match your trained model file
+model = joblib.load('earthquake_prediction_model.pkl')  
 
 @app.route('/submitMagnetometerData', methods=['POST'])
 def submit_data():
